@@ -13,6 +13,7 @@ app.use(express.static('.'));
 app.use(express.static('Mooc'));
 app.use(express.static('Informatique'));
 app.use(express.static('Informatique/D3'));
+app.use(express.static('Informatique/IA'));
 app.use(express.static('Informatique/NodeJS'));
 app.use(express.static('Informatique/VueJS'));
 app.use(express.static('Informatique/ReactJS'));
