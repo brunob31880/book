@@ -1,45 +1,49 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Bruno Perso</title>
-	<link rel="stylesheet" href="bruno.css">
-	<meta charset="utf-8" />
-  </head>
-  <body>
-   <div id="Layer1" style="position:absolute; left:0px; top:0px; width:136px; height:132px; z-index:1"><img name="fond" src="decroissance.jpg" width="1000" height="250" alt=""></div>
-   <div id="Layer2" style="position:absolute; left:10px; top:150px; width:64px; height:58px; z-index:2"><img name="bruno" class="roundedImageBorder" src="image.jpg" alt="Bruno" width="100px"></div>
-   <div id="Layer3" style="position:absolute; left:10px; top:320px; width:800px; height:58px; z-index:2">
-	<TABLE BORDER="1">
-<CAPTION> Tableau de liens </CAPTION>
-<TR>
-<TH> Mail aviation </TH>
-<TD> <a href="https://mail.lfpw.aviation-civile.gouv.fr" title="Mail Aviation">
-		<img alt="Mail" src="bleriot.jpg" width="120" height="75" />
-                </a>   </TD>
-<TD></TD>
-</TR>
-<TR>
-<TH> Gitlab aviation </TH>
-<TD> <a href="https://gitlab.asap.dsna.fr/users/sign_in" title="Gitlab ASAP">
-		<img alt="Gitlab" src="asap.png" width="120" height="75" />
-                </a>   </TD>
-<TD></TD>
-</TR>
-<TR>
-<TH> Mattermost  aviation </TH>
-<TD> <a href="https://mattermost.asap.dsna.fr/asap/channels/canal-pii" title="Gitlab ASAP">
-                <img alt="Mattermost" src="matt.png" width="120" height="75" />
-                </a>   </TD>
-<TD></TD>
-</TR>
 
+<head>
+  <title>Bruno Perso</title>
+  <link rel="stylesheet" href="bruno.css">
+  <meta charset="utf-8" />
+</head>
 
-<TR>
-<TH> Fiche de paie </TH>
-<TD> <a href="https://ensap.gouv.fr/" title="Salaire">
-		<img alt="Mail" src="ensap.png" width="120" height="75" />
-                </a>   </TD>
-<TD></TD>
-</TR>
+<body>
+  <div id="root">
+  <div id="header" w3-include-html="Page/header.html"></div>
+  <div id="layer4">
+    <TABLE BORDER="1">
+      <CAPTION> Tableau de liens </CAPTION>
+      <TR>
+        <TH> Mail aviation </TH>
+        <TD> <a href="https://mail.lfpw.aviation-civile.gouv.fr" title="Mail Aviation">
+            <img alt="Mail" src="bleriot.jpg" width="120" height="75" />
+          </a> </TD>
+        <TD></TD>
+      </TR>
+      <TR>
+        <TH> Gitlab aviation </TH>
+        <TD> <a href="https://gitlab.asap.dsna.fr/users/sign_in" title="Gitlab ASAP">
+            <img alt="Gitlab" src="asap.png" width="120" height="75" />
+          </a> </TD>
+        <TD></TD>
+      </TR>
+      <TR>
+        <TH> Mattermost aviation </TH>
+        <TD> <a href="https://mattermost.asap.dsna.fr/asap/channels/canal-pii" title="Gitlab ASAP">
+            <img alt="Mattermost" src="matt.png" width="120" height="75" />
+          </a> </TD>
+        <TD></TD>
+      </TR>
+      <TR>
+        <TH> Fiche de paie </TH>
+        <TD> <a href="https://ensap.gouv.fr/" title="Salaire">
+            <img alt="Mail" src="ensap.png" width="120" height="75" />
+          </a> </TD>
+        <TD></TD>
+      </TR>
 
-</TABLE>
+    </TABLE>
+  </div>
+</div>
+</body>
+  <script src="scripts/includeHTML.js"></script>

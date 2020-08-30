@@ -1,0 +1,29 @@
+{
+  "name": "book",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "babylonjs": "^4.1.0",
+    "d3-geo": "^1.11.9",
+    "fs": "^0.0.1-security",
+    "node-ivy": "^0.9.3",
+    "socket.io": "^2.3.0",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brunob31880/book.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brunob31880/book/issues"
+  },
+  "homepage": "https://github.com/brunob31880/book#readme"
+}

@@ -1,33 +1,41 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Bruno Perso</title>
-	<link rel="stylesheet" href="bruno.css">
-	<meta charset="utf-8" />
-  </head>
-  <body>
-   <div id="Layer1" style="position:absolute; left:0px; top:0px; width:136px; height:132px; z-index:1"><img name="fond" src="decroissance.jpg" width="1000" height="250" alt=""></div>
-   <div id="Layer2" style="position:absolute; left:10px; top:150px; width:64px; height:58px; z-index:2"><img name="bruno" class="roundedImageBorder" src="image.jpg" alt="Bruno" width="100px"></div>
-   <div id="Layer3" style="position:absolute; left:10px; top:320px; width:800px; height:58px; z-index:2">	
-	<TABLE BORDER="1"> 
-<CAPTION> Tableau de liens </CAPTION> 
-<TR> 
-<TH> Arthur Keller </TH>
-<TD> <iframe width="280" height="157" src="https://www.youtube.com/embed/UvXnKM2iPPE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>	     </TD> 
-<TD></TD> 
-</TR>
- <TR>
-<TH> Aurelien Barrau</TH> 
-<TD> <iframe width="280" height="157" src="https://www.youtube.com/embed/8Lhl6zE30z4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  </TD> 
-<TD></TD>
-</TR> 
-<TR>
-<TH> Jancovici </TH> 
-<TD> <iframe width="280" height="157" src="https://www.youtube.com/embed/fGpvVeZsB_o" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
- </TD> 
-<TD></TD>
-</TR> 
-</TABLE> 	   
-	   
 
-	   
+<head>
+  <title>Bruno Perso</title>
+  <link rel="stylesheet" href="bruno.css">
+  <meta charset="utf-8" />
+</head>
+
+<body>
+  <div id="root">
+    <div id="header" w3-include-html="Page/header.html"></div>
+    <div id="layer4">
+      <TABLE BORDER="1">
+        <CAPTION> Tableau de liens </CAPTION>
+        <TR>
+          <TH> Arthur Keller </TH>
+          <TD> <iframe width="280" height="157" src="https://www.youtube.com/embed/UvXnKM2iPPE" frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </TD>
+          <TD></TD>
+        </TR>
+        <TR>
+          <TH> Aurelien Barrau</TH>
+          <TD> <iframe width="280" height="157" src="https://www.youtube.com/embed/8Lhl6zE30z4" frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </TD>
+          <TD></TD>
+        </TR>
+        <TR>
+          <TH> Jancovici </TH>
+          <TD> <iframe width="280" height="157" src="https://www.youtube.com/embed/fGpvVeZsB_o" frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </TD>
+          <TD></TD>
+        </TR>
+      </TABLE>
+    </div>
+  </div>
+</body>
+<script src="scripts/includeHTML.js"></script>
