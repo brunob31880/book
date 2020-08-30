@@ -1,0 +1,78 @@
+bbody, html {
+    margin: 50;
+  }
+canvas {
+  position: absolute;
+  width: 700px;
+  height: 700px;
+}
+svg {
+  position: absolute;
+  width:700px;
+  height:700px;
+}
+#piste{
+  fill:none;
+  stroke:rgb(0, 0, 0);
+  stroke-width: 2;
+}
+/* ONGLETS */
+/* options de base des onglets */
+#mySidenav a {
+position: absolute; /* position par rapport à la fenêtre du navigateur */
+left: -90px; /* position pliée */
+transition: 0.3s; /* petite transition quand survolé */
+padding: 15px; /* marges */
+width: 100px; /* largeur */
+text-decoration: none; /* txt non soustritré */
+font-family: sans-serif;
+font-size: 16px; /* taille texte */
+color: #FFFFFF; /* texte blanc mon non visible car transparent */
+border-radius: 0 10px 10px 0; /* coins arrondis côté carte */
+/* z-index: 150; */
+}
+/* survol */
+#mySidenav a:hover {
+left: 0; /* s'affiche correctement, position dépliée */
+color: #FFFFFFFF; /* texte blanc ET visible */
+}
+#menu_secteurs {
+top: 40px;
+background-color: #d32f2f;
+}
+#menu_aeroports {
+top: 100px;
+background-color: #7b1fa2;
+}
+#menu_graticules {
+top: 160px;
+background-color: #303f9f;
+}
+#menu_wpts {
+top: 220px;
+background-color: #0288d1;
+}
+#menu_routes {
+top: 280px;
+background-color: #00796b;
+}
+#menu_militaires {
+top: 340px;
+background-color: #689f38 	;
+}
+#menu_obstacles {
+top: 400px;
+background-color: #fbc02d;
+}
+#menu_interdits {
+top: 460px;
+background-color: #f57c00;
+}
+#menu_transit {
+top: 520px;
+background-color: #5d4037;
+}
+#menu_radio {
+top: 580px;
+background-color: #455a64 	;
+}

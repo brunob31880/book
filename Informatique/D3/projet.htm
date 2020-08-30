@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projet D3</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body class="bg-dark">
+    <h2 class="text-center display-4 text-white m-5">D3 Graph Circulaire</h2>
+    <br><br><br>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5 mt-5 mr-5">
+               <form>
+                <div class="form-group">
+                    <label class="text-white" for='nom'>Nom de l'item</label>
+                    <input type="name" class="form-control" id="nom">
+                </div> 
+                <div class="form-group">
+                    <label class="text-white" for='prix'>Prix de l'item</label>
+                    <input type="name" class="form-control" id="prix">
+                </div> 
+                <button type="submit" class="btn btn-primary btn-block">Rajouter</button>
+                <p class="text-white" id="erreur"></p>
+               </form>
+            </div> 
+            <div class="col-md-5 ml-5">
+               <div class="box ml-5 mt-5">
+
+               </div>
+             </div> 
+        </div> 
+    </div>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-firestore.js"></script>
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyDKS0X34qVMrdaOH94ERXdIBMnUMb3FZdY",
+    authDomain: "d3-cours-projet-64bd3.firebaseapp.com",
+    databaseURL: "https://d3-cours-projet-64bd3.firebaseio.com",
+    projectId: "d3-cours-projet-64bd3",
+    storageBucket: "d3-cours-projet-64bd3.appspot.com",
+    messagingSenderId: "111583616193",
+    appId: "1:111583616193:web:18cf845eb2b37fa6da8840",
+    measurementId: "G-0ZLSB91TKW"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  const db=firebase.firestore();
+  firebase.analytics();
+</script>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/2.25.6/d3-legend.min.js"></script>
+    <script src="app.js"> </script>
+    <script src="graph.js"> </script>
+</body>
+</html>

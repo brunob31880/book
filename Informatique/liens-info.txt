@@ -1,0 +1,13 @@
+https://www.tutorialspoint.com/expressjs/expressjs_environment.htm
+https://www.flightradar24.com/47.59,7.56/8
+https://socket.io/get-started/chat/
+https://inqlude.org/
+https://d3js.org/
+http://marcneuwirth.com/blog/2012/06/24/creating-the-earth-with-d3-js/
+https://www.datavis.fr/index.php?page=migration-v4
+https://doc.babylonjs.com/babylon101/first
+https://www.youtube.com/watch?v=tgDcNvtuPyM
+https://www.youtube.com/watch?v=AiWHkKp6Ll0
+https://www.esrifrance.fr/coronavirus-ressources.aspx
+kepler.gl
+https://courspython.com/sommaire.html

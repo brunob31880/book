@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+	<link rel="stylesheet" href="bar.css">
+<h1>Donnees dynamiques via Ivy</h1>
+<div id="bar-chart"></div>
+  <script src="d3.min.js"></script>
+  <script src="/socket.io/socket.io.js"></script>
+  <script>
+  var dataset = [31, 64, 42, 28, 16, 32, 64, 10];
+
+  // Create our SVG container with grey background
+  var svg = d3.select("#bar-chart")
+            .append("svg")
+            .attr("width", 200)
+            .attr("height", 100);
+
+
+
+  var bars = svg.append('g')
+      .attr('class', 'bars');
+
+
+
+
+//function update(){
+// Bind data to chart, and create bars
+bars.selectAll('rect')
+.data(dataset)
+  .enter()
+  .append('rect')
+  .attr('x', (d,i) => i*25 )
+  .attr('y', (d) => 100-d)
+  .attr('width', 20)
+  .attr('height', (d) => d);
+//}
+
+  var socket = io();
+
+  socket.on('bars',function(msg){
+      var res1 = msg+'';
+      var res=res1.split(' ');
+      for (let i = 1; i < 9; i++) {
+          dataset[i]=Number(res[i]);
+          }
+       bars.selectAll('rect')
+          .data(dataset)
+            .attr('x', (d,i) => i*25 )
+            .attr('y', (d) => 100-d)
+            .attr('width', 20)
+            .attr('height', (d) => d);
+    });
+  </script>
+</html>
